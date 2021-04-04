@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coruja</title>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <header class="main-header">
+      <a href="#" class="logo-title">
+        <img class="img-logo" src="coruja-pirata1.svg" alt="Logo" />
+        <div class="logo-name">Coruja</div>
+      </a>
+      <!-- SESSÃO DE DOWNLOAD -->
+      <section id="download-link-container">
+        <label class="sr-only" for="link"></label>
+        <input
+          type="text"
+          name=""
+          id="link"
+          placeholder="Link do vídeo ou playist"
+        />
+        <button class="download-btn"></button>
+      </section>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Nome</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Começo do app -->
+    <main class="container">
+      <section id="select-group-container">
+        <div class="dropdown" onchange="updateValue()">
+          <button value="" id="button" onclick="myFunction()" class="dropbtn">
+            ORDENAR
+          </button>
+          <!-- Abrir o conteudo do dropdrown -->
+          <div id="myDropdown" class="dropdown-content">
+            <ol>
+              <li value="Ordenar por último inserido" class="lista">
+                <a href="#last-inserted" id="#last-inserted">
+                  Ordenar por último inserido
+                </a>
+              </li>
+
+              <li value="Ordenar por primeiro inserido" class="lista">
+                <a href="#first-inserted" id="#first-inserted">
+                  Ordenar por primeiro inserido
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="custom-select">
+          <label class="sr-only" for="playlist-videos"></label>
+          <select name="playlist-videos" id="playlist-videos">
+            <option value="Playlist">Playlist</option>
+            <option value="Vídeos">Vídeos</option>
+          </select>
+        </div>
+      </section>
+
+      <div id="search-container">
+        <input
+          class="search"
+          type="text"
+          placeholder="Search.."
+          name="search"
+        />
+        <button class="search-btn"></button>
+      </div>
+
+      <section id="cards">
+        <div class="card">
+          <img src="teste.jpg" alt="thumbnail" />
+          <!-- <span>
+            <img class="img-round" src="teste.jpg" alt="" />
+          </span> -->
+          <h2>Nome do vídeo...</h2>
+          <p>Nome do canal</p>
+        </div>
+        <div class="card">
+          <img src="teste.jpg" alt="thumbnail" />
+          <h2>Nome do vídeo...</h2>
+
+          <p>Nome do canal</p>
+          <p>Fazendo download... 30%</p>
+        </div>
+        <div class="card">
+          <img src="teste.jpg" alt="thumbnail" />
+          <h2>Nome do vídeo...</h2>
+
+          <p>Nome do canal</p>
+          <p>Fazendo download... 30%</p>
+        </div>
+        <div class="card">
+          <img src="teste.jpg" alt="thumbnail" />
+          <h2>Nome do vídeo...</h2>
+
+          <p>Nome do canal</p>
+          <p>Fazendo download... 30%</p>
+        </div>
+        <div class="card">
+          <img src="teste.jpg" alt="thumbnail" />
+          <h2>Nome do vídeo...</h2>
+
+          <p>Nome do canal</p>
+          <p>Fazendo download... 30%</p>
+        </div>
+      </section>
+    </main>
+    <footer><span>Coruja</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
