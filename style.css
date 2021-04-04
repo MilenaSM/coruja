@@ -116,7 +116,7 @@ body {
 }
 
 .download-btn {
-  background-image: url("download.svg");
+  background-image: url("/images/download.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -134,7 +134,7 @@ body {
 /* select and search ====================*/
 
 .dropbtn {
-  background-image: url(down-chevron.svg);
+  background-image: url("/images/down-chevron.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,7 +225,7 @@ body {
 }
 
 .search-btn {
-  background-image: url(search.svg);
+  background-image: url("/images/search.svg");
   background-position: center;
   background-size: 1rem;
   background-repeat: no-repeat;
