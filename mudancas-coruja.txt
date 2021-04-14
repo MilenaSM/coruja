@@ -1,5 +1,5 @@
 1 - colocar o input link em cima junto com o header e o meno de links
-2- utilizar icones baixados 
+2 - utilizar icones baixados
 3 - modificar o icone do search e download
 4 - estilizar o select
 
